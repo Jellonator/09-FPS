@@ -1,0 +1,73 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Object/Player/Player.gd" type="Script" id=1]
+[ext_resource path="res://Object/Player/beeminigun.glb" type="PackedScene" id=2]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.45
+
+[sub_resource type="CylinderShape" id=2]
+radius = 0.45
+height = 0.5
+
+[node name="Player" type="KinematicBody"]
+collision_layer = 0
+script = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 1, 0 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0 )
+shape = SubResource( 2 )
+
+[node name="PivotY" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0 )
+
+[node name="PivotX" type="Spatial" parent="PivotY"]
+
+[node name="Camera" type="Camera" parent="PivotY/PivotX"]
+current = true
+size = 0.1
+far = 500.0
+
+[node name="RayCast" type="RayCast" parent="PivotY/PivotX/Camera"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
+enabled = true
+cast_to = Vector3( 0, -100, 0 )
+
+[node name="MinigunPos" type="Spatial" parent="PivotY/PivotX/Camera"]
+transform = Transform( -0.25, 0, 3.77489e-08, 0, 0.25, 0, -3.7749e-08, 0, -0.25, 0.244678, -0.528096, -0.5 )
+
+[node name="DelayedPivot" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0 )
+
+[node name="beeminigun" parent="DelayedPivot" instance=ExtResource( 2 )]
+transform = Transform( -0.25, 0, 3.77489e-08, 0, 0.25, 0, -3.7749e-08, 0, -0.25, 0.244678, -0.528096, -0.5 )
+
+[node name="Barrel" parent="DelayedPivot/beeminigun" index="3"]
+transform = Transform( 0.999848, -0.0174524, 0, 0.0174524, 0.999848, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="ShootPos" type="Position3D" parent="DelayedPivot/beeminigun"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.38419e-07, 0.210492, 3.05197 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/CenterContainer"]
+margin_left = 508.0
+margin_top = 296.0
+margin_right = 516.0
+margin_bottom = 304.0
+rect_min_size = Vector2( 8, 8 )
+mouse_filter = 2
+
+[editable path="DelayedPivot/beeminigun"]
