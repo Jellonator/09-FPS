@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Ext/KenneyWeapon/Models/ammo_rocket.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Object/Enemy/SpaceCraft/Rocket.gd" type="Script" id=2]
@@ -6,6 +6,9 @@
 [sub_resource type="CylinderShape" id=1]
 radius = 0.265078
 height = 0.795839
+
+[sub_resource type="SphereShape" id=2]
+radius = 0.364866
 
 [node name="Rocket" type="RigidBody"]
 collision_layer = 6
@@ -38,4 +41,13 @@ material/13 = null
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0.43489 )
 shape = SubResource( 1 )
-[connection signal="body_entered" from="." to="." method="_on_Rocket_body_entered"]
+
+[node name="Area" type="Area" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.913057 )
+collision_layer = 0
+collision_mask = 9
+
+[node name="CollisionShape" type="CollisionShape" parent="Area"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.104445 )
+shape = SubResource( 2 )
+[connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]

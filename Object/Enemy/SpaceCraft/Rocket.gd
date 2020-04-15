@@ -16,10 +16,10 @@ func _integrate_forces(forces: PhysicsDirectBodyState):
 		var pos := global_transform.origin
 		var diff = (pos - ppos)
 		var target_pos = ppos
-		var force = 40.0
+		var force = 50.0
 		var targetv = force * (target_pos - pos).normalized()
 		forces.linear_velocity = forces.linear_velocity.move_toward(\
-				targetv, forces.step * 5)
+				targetv, forces.step * 8)
 		var newtx = global_transform.looking_at(global_transform.origin + diff, Vector3.UP)
 		var oldrot = Quat(global_transform.basis.get_euler())
 		var newrot = Quat(newtx.basis.get_euler())
@@ -33,8 +33,8 @@ func _physics_process(delta):
 	if p == null:
 		add_central_force(global_transform.basis.z.normalized() * 4)
 
-func _on_Rocket_body_entered(body):
-	if not body.is_in_group("bee"):
+func _on_Area_body_entered(body):
+	if not body.is_in_group("bee") and not get_collision_exceptions().has(body):
 		var e = SCENE_EXPLOSION.instance()
 		e.transform.origin = global_transform.origin
 		get_parent().add_child(e)

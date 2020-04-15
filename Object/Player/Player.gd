@@ -6,7 +6,7 @@ const SPEED_DASH := 16.0
 const SPEED_ACCEL := 32.0
 const SPEED_JUMP := 13
 const NUM_JUMPS := 1
-const BEES_PER_SECOND := 30.0
+const BEES_PER_SECOND := 15.0
 
 const scene_bee := preload("res://Object/Bee/Bee.tscn")
 
