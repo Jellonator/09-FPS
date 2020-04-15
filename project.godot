@@ -57,6 +57,17 @@ action_shoot={
  ]
 }
 
+[layer_names]
+
+3d_physics/layer_1="solid"
+3d_physics/layer_2="grabbable"
+3d_physics/layer_3="killtop"
+3d_physics/layer_4="player"
+
+[physics]
+
+3d/physics_engine="Bullet"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"

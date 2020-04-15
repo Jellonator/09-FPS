@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/flower_blue2.obj-662e4247878b51256e3d131a3f462a39.mesh"
+
+[deps]
+
+files=[ "res://.import/flower_blue2.obj-662e4247878b51256e3d131a3f462a39.mesh" ]
+
+source_file="res://Ext/KenneyNature/Models/flower_blue2.obj"
+dest_files=[ "res://.import/flower_blue2.obj-662e4247878b51256e3d131a3f462a39.mesh", "res://.import/flower_blue2.obj-662e4247878b51256e3d131a3f462a39.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -5, -5, 5 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/bridge_straight.obj-c14af82e961c5bba7eef1c723d6caff0.mesh"
+
+[deps]
+
+files=[ "res://.import/bridge_straight.obj-c14af82e961c5bba7eef1c723d6caff0.mesh" ]
+
+source_file="res://Ext/KenneyNature/Models/bridge_straight.obj"
+dest_files=[ "res://.import/bridge_straight.obj-c14af82e961c5bba7eef1c723d6caff0.mesh", "res://.import/bridge_straight.obj-c14af82e961c5bba7eef1c723d6caff0.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -5, -5, 5 )
+optimize_mesh=true

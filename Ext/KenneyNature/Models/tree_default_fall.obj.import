@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tree_default_fall.obj-aeeeb171464071a33ffa4f16da8c9cad.mesh"
+
+[deps]
+
+files=[ "res://.import/tree_default_fall.obj-aeeeb171464071a33ffa4f16da8c9cad.mesh" ]
+
+source_file="res://Ext/KenneyNature/Models/tree_default_fall.obj"
+dest_files=[ "res://.import/tree_default_fall.obj-aeeeb171464071a33ffa4f16da8c9cad.mesh", "res://.import/tree_default_fall.obj-aeeeb171464071a33ffa4f16da8c9cad.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -5, -5, 5 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tent_smallOpen.obj-6b67ddcfea2e66ba2b6db56f9b2fab6c.mesh"
+
+[deps]
+
+files=[ "res://.import/tent_smallOpen.obj-6b67ddcfea2e66ba2b6db56f9b2fab6c.mesh" ]
+
+source_file="res://Ext/KenneyNature/Models/tent_smallOpen.obj"
+dest_files=[ "res://.import/tent_smallOpen.obj-6b67ddcfea2e66ba2b6db56f9b2fab6c.mesh", "res://.import/tent_smallOpen.obj-6b67ddcfea2e66ba2b6db56f9b2fab6c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -5, -5, 5 )
+optimize_mesh=true

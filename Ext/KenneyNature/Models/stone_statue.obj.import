@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/stone_statue.obj-b76f2cc7d6c644f4b6a6790e7f2197d7.mesh"
+
+[deps]
+
+files=[ "res://.import/stone_statue.obj-b76f2cc7d6c644f4b6a6790e7f2197d7.mesh" ]
+
+source_file="res://Ext/KenneyNature/Models/stone_statue.obj"
+dest_files=[ "res://.import/stone_statue.obj-b76f2cc7d6c644f4b6a6790e7f2197d7.mesh", "res://.import/stone_statue.obj-b76f2cc7d6c644f4b6a6790e7f2197d7.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -5, -5, 5 )
+optimize_mesh=true

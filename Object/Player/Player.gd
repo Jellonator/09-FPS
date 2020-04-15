@@ -4,10 +4,8 @@ const GRAVITY := -30.0
 const SPEED_MAX := 8.0
 const SPEED_DASH := 16.0
 const SPEED_ACCEL := 32.0
-const SPEED_JUMP := 14
-const NUM_JUMPS := 2
-const NUM_DASHES := 2
-const DASH_TIME := 0.35
+const SPEED_JUMP := 13
+const NUM_JUMPS := 1
 const BEES_PER_SECOND := 30.0
 
 const scene_bee := preload("res://Object/Bee/Bee.tscn")
@@ -29,9 +27,6 @@ var mouse_range := PI / 2.0 - 1e-4
 
 var velocity := Vector3.ZERO
 var jumps_left := NUM_JUMPS
-var dashes_left := NUM_DASHES
-var dash_timer := 0.0
-var dash_velocity := Vector3.ZERO
 var bee_timer := 0.0
 var barrel_speed := 0.0
 
@@ -65,6 +60,7 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _physics_process(delta: float):
+	prints(is_on_floor(), randi())
 	velocity += Vector3(0, GRAVITY, 0) * delta
 	var vel_target := get_input() * SPEED_MAX
 	var vel_up := velocity * Vector3(0, 1, 0)
@@ -76,13 +72,9 @@ func _physics_process(delta: float):
 	else:
 		vel_current += diff.normalized() * accel
 	velocity = vel_up + vel_current
-	if dash_timer > 0.0:
-		dash_timer -= delta
-		velocity = dash_velocity
-	velocity = move_and_slide(velocity, Vector3.UP, true)
+	velocity = move_and_slide(velocity, Vector3.UP, true, 4, 0.7853, false)
 	if is_on_floor():
 		jumps_left = NUM_JUMPS
-		dashes_left = NUM_DASHES
 	else:
 		jumps_left = min(jumps_left, NUM_JUMPS-1)
 	handle_delayed_pivot(delta)
@@ -121,7 +113,3 @@ func _unhandled_input(event):
 	elif event.is_action_pressed("action_jump") and jumps_left > 0:
 		jumps_left -= 1
 		velocity.y = SPEED_JUMP
-	elif event.is_action_pressed("action_dash") and dashes_left > 0:
-		dashes_left -= 1
-		dash_velocity = -node_camera.global_transform.basis.z * SPEED_DASH
-		dash_timer = DASH_TIME

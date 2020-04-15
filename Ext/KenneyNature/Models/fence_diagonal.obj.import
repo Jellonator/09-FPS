@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/fence_diagonal.obj-421182dd265a8d965912c57399b89410.mesh"
+
+[deps]
+
+files=[ "res://.import/fence_diagonal.obj-421182dd265a8d965912c57399b89410.mesh" ]
+
+source_file="res://Ext/KenneyNature/Models/fence_diagonal.obj"
+dest_files=[ "res://.import/fence_diagonal.obj-421182dd265a8d965912c57399b89410.mesh", "res://.import/fence_diagonal.obj-421182dd265a8d965912c57399b89410.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -5, -5, 5 )
+optimize_mesh=true

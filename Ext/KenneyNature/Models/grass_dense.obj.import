@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/grass_dense.obj-d75b3a9b11d5c1be3c163acdf42a624c.mesh"
+
+[deps]
+
+files=[ "res://.import/grass_dense.obj-d75b3a9b11d5c1be3c163acdf42a624c.mesh" ]
+
+source_file="res://Ext/KenneyNature/Models/grass_dense.obj"
+dest_files=[ "res://.import/grass_dense.obj-d75b3a9b11d5c1be3c163acdf42a624c.mesh", "res://.import/grass_dense.obj-d75b3a9b11d5c1be3c163acdf42a624c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -5, -5, 5 )
+optimize_mesh=true

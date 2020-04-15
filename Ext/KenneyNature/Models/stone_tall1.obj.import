@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/stone_tall1.obj-65fbf332bf9c8b433c469694b8cd8055.mesh"
+
+[deps]
+
+files=[ "res://.import/stone_tall1.obj-65fbf332bf9c8b433c469694b8cd8055.mesh" ]
+
+source_file="res://Ext/KenneyNature/Models/stone_tall1.obj"
+dest_files=[ "res://.import/stone_tall1.obj-65fbf332bf9c8b433c469694b8cd8055.mesh", "res://.import/stone_tall1.obj-65fbf332bf9c8b433c469694b8cd8055.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -5, -5, 5 )
+optimize_mesh=true

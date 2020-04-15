@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/fence_gate.obj-8fb94b6a7d19036e0ccb92e463ec2436.mesh"
+
+[deps]
+
+files=[ "res://.import/fence_gate.obj-8fb94b6a7d19036e0ccb92e463ec2436.mesh" ]
+
+source_file="res://Ext/KenneyNature/Models/fence_gate.obj"
+dest_files=[ "res://.import/fence_gate.obj-8fb94b6a7d19036e0ccb92e463ec2436.mesh", "res://.import/fence_gate.obj-8fb94b6a7d19036e0ccb92e463ec2436.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -5, -5, 5 )
+optimize_mesh=true

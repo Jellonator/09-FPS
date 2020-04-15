@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/stone_block.obj-322c40b7b67c1da0f531660bcd4e33c8.mesh"
+
+[deps]
+
+files=[ "res://.import/stone_block.obj-322c40b7b67c1da0f531660bcd4e33c8.mesh" ]
+
+source_file="res://Ext/KenneyNature/Models/stone_block.obj"
+dest_files=[ "res://.import/stone_block.obj-322c40b7b67c1da0f531660bcd4e33c8.mesh", "res://.import/stone_block.obj-322c40b7b67c1da0f531660bcd4e33c8.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -5, -5, 5 )
+optimize_mesh=true

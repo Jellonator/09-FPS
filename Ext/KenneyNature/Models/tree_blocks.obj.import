@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/tree_blocks.obj-db90590f21ac888efe56dcc8bf462673.mesh"
+
+[deps]
+
+files=[ "res://.import/tree_blocks.obj-db90590f21ac888efe56dcc8bf462673.mesh" ]
+
+source_file="res://Ext/KenneyNature/Models/tree_blocks.obj"
+dest_files=[ "res://.import/tree_blocks.obj-db90590f21ac888efe56dcc8bf462673.mesh", "res://.import/tree_blocks.obj-db90590f21ac888efe56dcc8bf462673.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -5, -5, 5 )
+optimize_mesh=true
