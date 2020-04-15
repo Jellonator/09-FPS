@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/buildingCorridorOpen.obj-f9bebe5f37f5f0f0f99dd6837f7516b0.mesh"
+
+[deps]
+
+files=[ "res://.import/buildingCorridorOpen.obj-f9bebe5f37f5f0f0f99dd6837f7516b0.mesh" ]
+
+source_file="res://Ext/KenneySpace/Models/buildingCorridorOpen.obj"
+dest_files=[ "res://.import/buildingCorridorOpen.obj-f9bebe5f37f5f0f0f99dd6837f7516b0.mesh", "res://.import/buildingCorridorOpen.obj-f9bebe5f37f5f0f0f99dd6837f7516b0.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

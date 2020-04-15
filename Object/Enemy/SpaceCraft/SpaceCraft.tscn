@@ -1,0 +1,110 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Ext/KenneySpace/Models/spaceCraft1.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Object/Enemy/SpaceCraft/SpaceCraft.gd" type="Script" id=2]
+[ext_resource path="res://Ext/KenneyWeapon/Models/ammo_rocket.obj" type="ArrayMesh" id=3]
+
+[sub_resource type="ConvexPolygonShape" id=1]
+points = PoolVector3Array( -2.46828, 1.96838, 4.33325, -2.46828, 4.35786, 2.10363, -2.36392, 4.25, 4.08635, -2.34633, -2.22045e-16, -3.66033, -2.34633, -2.22045e-16, 2.08118, -2.30926, -0.420145, 5.28927, -2.19063, 4.2265, 6.59922, -2.17058, -0.2765, 6.52401, -1.92911, -0.5, 4.15096, -1.83244, -0.375106, -0.663133, -1.2973, 1.35701, -9.3091, -1.28871, -2.22045e-16, -9.2527, -1.24724, 1.5246, -8.83352, -0.954713, 3.85724, -1.97282, 0.939577, 3.70904, -2.40872, 0.94128, 3.85724, -1.97282, 1.06715, 3.3945, -3.25267, 1.28013, 2.22045e-16, -9.2527, 1.29298, 1.35577, -9.32771, 1.38997, 1.52202, -8.4456, 1.77368, 3.81305, -0.393086, 1.81923, -0.375106, -0.663133, 1.83894, 2.0809, -3.30074, 1.91419, 3.95, 1.53838, 1.92398, -0.5, 4.15096, 2.16023, -0.2765, 6.52401, 2.18171, 4.2265, 6.59922, 2.18685, -2.22045e-16, -3.66033, 2.30881, -0.420145, 5.28927 )
+
+[sub_resource type="ConvexPolygonShape" id=2]
+points = PoolVector3Array( -4.22077, 1.65072, -1.71519, -4.22077, 1.65072, 2.2652, -4.21408, 0.706167, -1.7, -4.21408, 0.706168, 2.25, -4.06145, -0.101378, -3.78649, -4.06145, -0.101378, 2.2652, -4.06145, 1.96936, 4.33649, -4.06145, 2.12824, -3.78649, -4.06145, 4.35786, 2.10617, -4.06145, 4.35786, 4.33649, -2.51113, 4.25, 4.14001, -2.50858, 0, -3.60182, -2.50858, 0, 2.1747, -2.49986, 1.975, 4.19227, -2.46875, 2.12824, -3.78649, -2.46875, 4.35786, 2.10617 )
+
+[sub_resource type="ConvexPolygonShape" id=3]
+points = PoolVector3Array( 2.30948, 2.12824, -3.78649, 2.30948, 4.35786, 2.10617, 2.34341, 1.975, 4.19227, 2.35293, 0, -3.60182, 2.35293, 0, 2.1747, 2.35571, 4.25, 4.14001, 3.95, 0.210018, 1.98724, 4.06118, -0.101378, -3.78649, 4.06118, 1.96936, 4.33649, 4.06118, 2.12824, -3.78649, 4.06118, 4.35786, 2.10617, 4.06118, 4.35786, 4.33649, 4.21347, 0.706167, -1.7, 4.21347, 0.706168, 2.25, 4.22077, 1.65072, -1.71519, 4.22077, 1.65072, 2.2652 )
+
+[sub_resource type="ConvexPolygonShape" id=4]
+points = PoolVector3Array( -9.95464, 1.6502, 0.0364635, -9.95464, 1.6502, 2.26593, -9.875, 0.707829, 2.21062, -9.6609, 0.743512, 0.060903, -8.20181, 1.6502, -1.71593, -8.0878, 0.743452, -1.5122, -4.25343, 0.7, -1.69325, -4.25343, 0.7, 2.24325, -4.22077, 1.6502, 2.26593, -3.95, 1.69533, -1.90396 )
+
+[sub_resource type="ConvexPolygonShape" id=5]
+points = PoolVector3Array( 3.95, 1.69533, -1.90396, 4.22077, 1.6502, 2.26593, 4.25343, 0.7, -1.69325, 4.25343, 0.7, 2.24325, 8.0878, 0.743452, -1.5122, 8.20181, 1.6502, -1.71593, 9.6609, 0.743512, 0.060903, 9.875, 0.707829, 2.21062, 9.95464, 1.6502, 0.0364635, 9.95464, 1.6502, 2.26593 )
+
+[sub_resource type="SphereShape" id=6]
+radius = 20.0
+
+[node name="SpaceCraft" type="RigidBody"]
+collision_layer = 7
+collision_mask = 0
+can_sleep = false
+linear_damp = 0.5
+angular_damp = 0.5
+script = ExtResource( 2 )
+
+[node name="spaceCraft1" type="MeshInstance" parent="."]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+
+[node name="CollisionShape5" type="CollisionShape" parent="."]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="."]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="."]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="."]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+shape = SubResource( 5 )
+
+[node name="AreaActivate" type="Area" parent="."]
+collision_layer = 0
+collision_mask = 8
+
+[node name="CollisionShape" type="CollisionShape" parent="AreaActivate"]
+shape = SubResource( 6 )
+
+[node name="RocketLeft" type="Spatial" parent="."]
+transform = Transform( -1, 0, -3.89414e-07, 0, 1, 0, 3.89414e-07, 0, -1, 0.592047, 0.18629, -0.786322 )
+visible = false
+
+[node name="Mesh" type="MeshInstance" parent="RocketLeft"]
+transform = Transform( 25, 0, 7.10543e-13, 0, 25, 0, -7.10543e-13, 0, 25, 0, 0, 0 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+
+[node name="RocketRight" type="Spatial" parent="."]
+transform = Transform( -1, 0, -3.89414e-07, 0, 1, 0, 3.89414e-07, 0, -1, -0.592, 0.186, -0.78591 )
+visible = false
+
+[node name="Mesh" type="MeshInstance" parent="RocketRight"]
+transform = Transform( 25, 0, 7.10543e-13, 0, 25, 0, -7.10543e-13, 0, 25, 0, 0, 0 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+[connection signal="body_entered" from="AreaActivate" to="." method="_on_AreaActivate_body_entered"]

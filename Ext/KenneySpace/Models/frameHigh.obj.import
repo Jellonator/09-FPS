@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/frameHigh.obj-8e2821fe75c56daab07c0c9607bec0af.mesh"
+
+[deps]
+
+files=[ "res://.import/frameHigh.obj-8e2821fe75c56daab07c0c9607bec0af.mesh" ]
+
+source_file="res://Ext/KenneySpace/Models/frameHigh.obj"
+dest_files=[ "res://.import/frameHigh.obj-8e2821fe75c56daab07c0c9607bec0af.mesh", "res://.import/frameHigh.obj-8e2821fe75c56daab07c0c9607bec0af.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

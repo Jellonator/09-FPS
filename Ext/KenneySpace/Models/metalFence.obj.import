@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/metalFence.obj-47b5b230d30199bde1b0b44077748e56.mesh"
+
+[deps]
+
+files=[ "res://.import/metalFence.obj-47b5b230d30199bde1b0b44077748e56.mesh" ]
+
+source_file="res://Ext/KenneySpace/Models/metalFence.obj"
+dest_files=[ "res://.import/metalFence.obj-47b5b230d30199bde1b0b44077748e56.mesh", "res://.import/metalFence.obj-47b5b230d30199bde1b0b44077748e56.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/rocketlauncherModernRotating.obj-e38be7cd6dbfb26cbfd4cdaa18368cbb.mesh"
+
+[deps]
+
+files=[ "res://.import/rocketlauncherModernRotating.obj-e38be7cd6dbfb26cbfd4cdaa18368cbb.mesh" ]
+
+source_file="res://Ext/KenneyWeapon/Models/rocketlauncherModernRotating.obj"
+dest_files=[ "res://.import/rocketlauncherModernRotating.obj-e38be7cd6dbfb26cbfd4cdaa18368cbb.mesh", "res://.import/rocketlauncherModernRotating.obj-e38be7cd6dbfb26cbfd4cdaa18368cbb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/metalStructureCross.obj-4dd03fa4913972160c00181aa2bec68f.mesh"
+
+[deps]
+
+files=[ "res://.import/metalStructureCross.obj-4dd03fa4913972160c00181aa2bec68f.mesh" ]
+
+source_file="res://Ext/KenneySpace/Models/metalStructureCross.obj"
+dest_files=[ "res://.import/metalStructureCross.obj-4dd03fa4913972160c00181aa2bec68f.mesh", "res://.import/metalStructureCross.obj-4dd03fa4913972160c00181aa2bec68f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/pipeStraightLiner.obj-3e9944e0dbbb4e295665d74ea8d5442f.mesh"
+
+[deps]
+
+files=[ "res://.import/pipeStraightLiner.obj-3e9944e0dbbb4e295665d74ea8d5442f.mesh" ]
+
+source_file="res://Ext/KenneySpace/Models/pipeStraightLiner.obj"
+dest_files=[ "res://.import/pipeStraightLiner.obj-3e9944e0dbbb4e295665d74ea8d5442f.mesh", "res://.import/pipeStraightLiner.obj-3e9944e0dbbb4e295665d74ea8d5442f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

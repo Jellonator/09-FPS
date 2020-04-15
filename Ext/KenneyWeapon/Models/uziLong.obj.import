@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/uziLong.obj-3362f7f7b6e3416049ceb3df5b6b2baa.mesh"
+
+[deps]
+
+files=[ "res://.import/uziLong.obj-3362f7f7b6e3416049ceb3df5b6b2baa.mesh" ]
+
+source_file="res://Ext/KenneyWeapon/Models/uziLong.obj"
+dest_files=[ "res://.import/uziLong.obj-3362f7f7b6e3416049ceb3df5b6b2baa.mesh", "res://.import/uziLong.obj-3362f7f7b6e3416049ceb3df5b6b2baa.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

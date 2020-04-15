@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/groundTile.obj-fa7f1b42cde4f3b61b1ef02a67000923.mesh"
+
+[deps]
+
+files=[ "res://.import/groundTile.obj-fa7f1b42cde4f3b61b1ef02a67000923.mesh" ]
+
+source_file="res://Ext/KenneySpace/Models/groundTile.obj"
+dest_files=[ "res://.import/groundTile.obj-fa7f1b42cde4f3b61b1ef02a67000923.mesh", "res://.import/groundTile.obj-fa7f1b42cde4f3b61b1ef02a67000923.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

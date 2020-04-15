@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/rocksOre.obj-89033be30518d8d47a660cbe3eaadb02.mesh"
+
+[deps]
+
+files=[ "res://.import/rocksOre.obj-89033be30518d8d47a660cbe3eaadb02.mesh" ]
+
+source_file="res://Ext/KenneySpace/Models/rocksOre.obj"
+dest_files=[ "res://.import/rocksOre.obj-89033be30518d8d47a660cbe3eaadb02.mesh", "res://.import/rocksOre.obj-89033be30518d8d47a660cbe3eaadb02.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

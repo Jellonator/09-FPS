@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/consoleCorner.obj-c3e5bb5b1e6316c601f3d1ca69478709.mesh"
+
+[deps]
+
+files=[ "res://.import/consoleCorner.obj-c3e5bb5b1e6316c601f3d1ca69478709.mesh" ]
+
+source_file="res://Ext/KenneySpace/Models/consoleCorner.obj"
+dest_files=[ "res://.import/consoleCorner.obj-c3e5bb5b1e6316c601f3d1ca69478709.mesh", "res://.import/consoleCorner.obj-c3e5bb5b1e6316c601f3d1ca69478709.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/frameHighTile.obj-2eb8948d1ea7119c6ef6722528464a02.mesh"
+
+[deps]
+
+files=[ "res://.import/frameHighTile.obj-2eb8948d1ea7119c6ef6722528464a02.mesh" ]
+
+source_file="res://Ext/KenneySpace/Models/frameHighTile.obj"
+dest_files=[ "res://.import/frameHighTile.obj-2eb8948d1ea7119c6ef6722528464a02.mesh", "res://.import/frameHighTile.obj-2eb8948d1ea7119c6ef6722528464a02.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

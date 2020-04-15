@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/machinegunLauncher.obj-01f5b9f2ee957ad3d0efb67e11ad6af8.mesh"
+
+[deps]
+
+files=[ "res://.import/machinegunLauncher.obj-01f5b9f2ee957ad3d0efb67e11ad6af8.mesh" ]
+
+source_file="res://Ext/KenneyWeapon/Models/machinegunLauncher.obj"
+dest_files=[ "res://.import/machinegunLauncher.obj-01f5b9f2ee957ad3d0efb67e11ad6af8.mesh", "res://.import/machinegunLauncher.obj-01f5b9f2ee957ad3d0efb67e11ad6af8.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

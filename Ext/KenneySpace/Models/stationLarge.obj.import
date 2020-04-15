@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/stationLarge.obj-a97de0160888c3d1581ec9ad6ba1217c.mesh"
+
+[deps]
+
+files=[ "res://.import/stationLarge.obj-a97de0160888c3d1581ec9ad6ba1217c.mesh" ]
+
+source_file="res://Ext/KenneySpace/Models/stationLarge.obj"
+dest_files=[ "res://.import/stationLarge.obj-a97de0160888c3d1581ec9ad6ba1217c.mesh", "res://.import/stationLarge.obj-a97de0160888c3d1581ec9ad6ba1217c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

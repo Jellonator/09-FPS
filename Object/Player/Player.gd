@@ -30,6 +30,20 @@ var jumps_left := NUM_JUMPS
 var bee_timer := 0.0
 var barrel_speed := 0.0
 
+var health := 3
+
+func update_health():
+	$CanvasLayer/Label.text = "Health: " + str(health)
+
+func do_damage(amt: int):
+	health = clamp(health - amt, 0, 3)
+	update_health()
+	if health <= 0:
+		get_tree().change_scene("res://Menu/GameOver.tscn")
+
+func get_eyepos() -> Vector3:
+	return node_pivotx.global_transform.origin
+
 func rand_quat_uniform() -> Quat:
 	# See: http://planning.cs.uiuc.edu/node198.html
 	var u1 := rand_range(0.0, 1.0)
@@ -60,7 +74,6 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _physics_process(delta: float):
-	prints(is_on_floor(), randi())
 	velocity += Vector3(0, GRAVITY, 0) * delta
 	var vel_target := get_input() * SPEED_MAX
 	var vel_up := velocity * Vector3(0, 1, 0)

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/metalTileConnectCenter.obj-88f58fc7449028ed54da5984244956be.mesh"
+
+[deps]
+
+files=[ "res://.import/metalTileConnectCenter.obj-88f58fc7449028ed54da5984244956be.mesh" ]
+
+source_file="res://Ext/KenneySpace/Models/metalTileConnectCenter.obj"
+dest_files=[ "res://.import/metalTileConnectCenter.obj-88f58fc7449028ed54da5984244956be.mesh", "res://.import/metalTileConnectCenter.obj-88f58fc7449028ed54da5984244956be.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/metalTileSmall.obj-4be4fffb0f05485a5092c2a15fb64b6a.mesh"
+
+[deps]
+
+files=[ "res://.import/metalTileSmall.obj-4be4fffb0f05485a5092c2a15fb64b6a.mesh" ]
+
+source_file="res://Ext/KenneySpace/Models/metalTileSmall.obj"
+dest_files=[ "res://.import/metalTileSmall.obj-4be4fffb0f05485a5092c2a15fb64b6a.mesh", "res://.import/metalTileSmall.obj-4be4fffb0f05485a5092c2a15fb64b6a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
